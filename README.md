@@ -34,8 +34,8 @@ As a side effect this mod might be able to handle content mods if they only chan
 ### Step 2 - Create the project - copy the code
   1. delete Class1.cs
   2. add a C# class file called "ModEntry.cs" and a .json file called "manifest.json" <br>
-    > 2.1 open Project Explorer (View -> Project Explorer or press shortcut Ctrl+Alt+L) <br>
-    > 2.2 right-click "Stardew_Mod_RemixFinder" -> Add > new element (around the center of the menu) <br>
+    2.1 open Project Explorer (View -> Project Explorer or press shortcut Ctrl+Alt+L) <br>
+    2.2 right-click "Stardew_Mod_RemixFinder" -> Add > new element (around the center of the menu) <br>
   3. copy the code from the files of the same name in this repository into them
   4. try to build the project 
     > 4.1 Shortcut Ctrl+B, or Menu Create -> create Stardew_Mod_Remixfinder <br>
