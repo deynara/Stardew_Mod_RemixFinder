@@ -65,6 +65,6 @@ Hint: Start small and with only a few restrictions (or in range of one of the kn
 ## Change .Net version of solution:
   1. open Project Explorer (View -> Project Explorer or press shortcut Ctrl+Alt+L)
   2. right-click "Stardew_Mod_RemixFinder" -> Properties (at the bottom of the menu)
-  3. search the header Target framework in tab generel (should bethe second thing in the one already selected) -> choose .Net 6.0 in the dropdown
-  4. if the .net version is not installed VS will show a Warning and install button in the project explorer
+  3. search the header "Target Framewor"k in tab general (should be the second thing in the one already selected) -> choose .Net 6.0 in the dropdown
+  4. if the .net version is not installed Visual Studio will show a Warning and install button in the project explorer
   
