@@ -3,8 +3,9 @@ This is a mod skeleton of a Seedfinder for the game Stardew Valley to find the d
 Stardew_Mod_RemixFinder is designed to be created as it's own mod and runs in the game itself.
 
 ## Why seed finding as a mod?
-To get the bundles generated correctly. With RNG involved it's important that calls are made in the exact order and amount.<br>
-That's guaranteed if the the game's own logic and data handling is used.<br>
+To get the bundles generated correctly. <br>
+With RNG involved it's important that calls are made in the exact order and amount and I couldn't figure out how to do it right.<br>
+But if the the game's own logic and data handling is used, it's guaranteed to be correct .<br>
 As a side effect this mod might be able to handle content mods if they only change the raw data used for remixed bundles.<br>
 
 ## How to use?
