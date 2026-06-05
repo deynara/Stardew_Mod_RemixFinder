@@ -8,9 +8,9 @@ That's guaranteed if the the game's own logic and data handling is used.<br>
 As a side effect this mod might be able to handle content mods if they only change the raw data used for remixed bundles.<br>
 
 ## How to use?
-If you don't know much about programming or creating a mod: <br>
+### If you don't know much about programming or creating a mod: <br>
   It should be simple enough to understand what to do. <br>
-if you do know a lot about programming or creating a mod: <br>
+### if you do know a lot about programming or creating a mod: <br>
   I'm sorry, I don't know much about programming nor creating a mod.
 
 ### Step 0 - Requirements:
@@ -34,10 +34,10 @@ if you do know a lot about programming or creating a mod: <br>
   1. delete Class1.cs
   2. add a C# class file called "ModEntry.cs" and a .json file called "manifest.json" <br>
     2.1 open Project Explorer (View -> Project Explorer or press shortcut Ctrl+Alt+L) <br>
-    2.2 right-click "Stardew_Mod_RemixFinder" -> Add > new element (around the center of the menu)
+    2.2 right-click "Stardew_Mod_RemixFinder" -> Add > new element (around the center of the menu) <br>
   3.copy the code from the files of the same name in this repository into them
   4. try to build the project 
-    4.1 Shortcut Ctrl+B, or Menu Create -> create Stardew_Mod_Remixfinder
+    4.1 Shortcut Ctrl+B, or Menu Create -> create Stardew_Mod_Remixfinder <br>
   5. if successful without raising an error and SMAPI was installed correctly you should now find the mod in your mod folder
      5.1 Folder location if you have it through steam: right-click Stardew Valley -> Browse Local Files <br>
      5.2 if not open windows search bar and type %appdata% to look into the Roaming folder <br>
