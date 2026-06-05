@@ -48,12 +48,12 @@ As a side effect this mod might be able to handle content mods if they only chan
 Hint: Start small and with only a few restrictions (or in range of one of the known seeds I gave as a comment inside the code)
   1. open the ModEntry.cs file and locate the getConditions()-method (line 63 or use CTRL+F to search)
   2. modifiy the Conditions_List.Add(getListItem()); in accordance to your conditions (don't forget the trailing ';' if you add lines) <br>
-    2.1 Argeuments in order are <br>
+    2.1 Arguments in order are <br>
      > 2.1.1 bundle name - required and must match spelling as used by Stardew (see the getRoomByBundle() method for valid bundle names) <br>
      > 2.1.2 if bundle should be missing - "true" or "false" in lower case <br>
      > 2.1.3 item name - if irrelevant use "None" (use exact spelling), for information which and how many items can be excluded see getRoomByBundle() and get_ObjectID_by_Itemname <br>
      >> 2.1.3.1 only items that can be missing in vanilla Stardew 1.6 are supported, if you need to check a different item you need to add their object id in get_ObjectID_by_Itemname <br>
-     > 2.1.4 if item  should be missing - "true" or "false" in lower case <br>
+     2.1.4 if item  should be missing - "true" or "false" in lower case <br>
   3. set your search depth and starting seed in checkConditionsWrapper()
   4. build the project (CTRL+B)
   5. run StardewModdingAPI.exe and wait for the title screen <br>
