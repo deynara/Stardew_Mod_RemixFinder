@@ -11,8 +11,8 @@ As a side effect this mod might be able to handle content mods if they only chan
 ### If you don't know much about programming or creating a mod: <br>
   It should be simple enough to understand what to do. <br>
 ### If you do know a lot about programming or creating a mod: <br>
-  I'm sorry, I don't know much about programming nor creating a mod.
-  Maybe you can clone this repository to make it work?
+  I'm sorry, I don't know much about programming nor creating a mod. <br>
+  Maybe you can clone this repository to skip a few steps?
 
 ### Step 0 - Requirements:
   1. install Stardew Valley
