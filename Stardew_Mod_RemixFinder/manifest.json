@@ -1,0 +1,10 @@
+{
+  "Name": "Stardew_Mod_RemixFinder",
+  "Author": "deynara",
+  "Version": "1.0.0",
+  "Description": "Combines a brute-force search and Stardew's own world creation to find a world with a desired configuration of remixed Community Center Bundles",
+  "UniqueID": "deynara.Stardew_Mod_RemixFinder",
+  "EntryDll": "Stardew_Mod_RemixFinder.dll",
+  "MinimumApiVersion": "4.0.0",
+  "UpdateKeys": []
+}
