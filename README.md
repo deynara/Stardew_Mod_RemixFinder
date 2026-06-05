@@ -16,7 +16,7 @@ if you do know a lot about programming or creating a mod:
 ### Step 0 - Requirements:
   1. install Stardew Valley
   2. install SMAPI. https://stardewvalleywiki.com/Modding:Player_Guide/Getting_Started#Install_SMAPI
-    SMAPI is the thign that will load your mod into the game.
+    SMAPI is the thing that will load your mod into the game.
   3. Install an IDE (integrated development environment)
     which you'll use to edit and compile your mod code
     To create this I used Windows Virtual Stuido Community (it's free) https://visualstudio.microsoft.com/de/vs/community/
