@@ -51,8 +51,8 @@ Hint: Start small and with only a few restrictions (or in range of one of the kn
     2.1 Arguments in order are <br>
      > 2.1.1 bundle name - required and must match spelling as used by Stardew (see the getRoomByBundle() method for valid bundle names) <br>
      > 2.1.2 if bundle should be missing - "true" or "false" in lower case <br>
-     > 2.1.3 item name - if irrelevant use "None" (use exact spelling), for information which and how many items can be excluded see getRoomByBundle() and get_ObjectID_by_Itemname <br>
-     > 2.1.3.1 only items that can be missing in vanilla Stardew 1.6 are supported, if you need to check a different item you need to add their object id in get_ObjectID_by_Itemname <br>
+     > 2.1.3 item name - if irrelevant use "None" (use exact spelling), for information which and how many items can be excluded see getRoomByBundle() and get_ObjectID_by_Itemname() <br>
+     > 2.1.3.1 only items that can be missing in vanilla Stardew 1.6 are supported, if you need to check a different item you need to add their object id in get_ObjectID_by_Itemname() <br>
      > 2.1.4 if item  should be missing - "true" or "false" in lower case <br>
   3. set your search depth and starting seed in checkConditionsWrapper()
   4. build the project (CTRL+B)
