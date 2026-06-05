@@ -32,29 +32,29 @@ if you do know a lot about programming or creating a mod: <br>
 
 ### Step 2 - Create the project - copy the code
   1. delete Class1.cs
-  2. add a C# class file called "ModEntry.cs" and a .json file called "manifest.json"
-    2.1 open Project Explorer (View -> Project Explorer or press shortcut Ctrl+Alt+L)
+  2. add a C# class file called "ModEntry.cs" and a .json file called "manifest.json" <br>
+    2.1 open Project Explorer (View -> Project Explorer or press shortcut Ctrl+Alt+L) <br>
     2.2 right-click "Stardew_Mod_RemixFinder" -> Add > new element (around the center of the menu)
   3.copy the code from the files of the same name in this repository into them
   4. try to build the project 
     4.1 Shortcut Ctrl+B, or Menu Create -> create Stardew_Mod_Remixfinder
   5. if successful without raising an error and SMAPI was installed correctly you should now find the mod in your mod folder
-     5.1 Folder location if you have it through steam: right-click Stardew Valley -> Browse Local Files
-     5.2 if not open windows search bar and type %appdata% to look into the Roaming folder
-     5.3 if it's not there either I don't know
+     5.1 Folder location if you have it through steam: right-click Stardew Valley -> Browse Local Files <br>
+     5.2 if not open windows search bar and type %appdata% to look into the Roaming folder <br>
+     5.3 if it's not there either I don't know <br>
 
 ### Step 3 - Setup and Run your search
   1. open the ModEntry.cs file and locate the getConditions()-method (line 63 or use CTRL+F to search)
-  2. modifiy the Conditions_List.Add(getListItem()); in accordance to your conditions (don't forget the trailing ';' if you add lines)
-    2.1 Argeuments in order are
-     2.1.1 bundle name - required and must match spelling as used by Stardew (see the getRoomByBundle() method for valid bundle names)
-     2.1.2 if bundle should be missing - "true" or "false" in lower case
-     2.1.3 item name - if irrelevant use "None" (use exact spelling), for information which and how many items can be excluded see getRoomByBundle() and get_ObjectID_by_Itemname
-     2.1.3.1 only items that can be missing in vanilla Stardew 1.6 are supported, if you need to check a different item you need to add their object id in get_ObjectID_by_Itemname
-     2.1.4 i item  should be missing - "true" or "false" in lower case
+  2. modifiy the Conditions_List.Add(getListItem()); in accordance to your conditions (don't forget the trailing ';' if you add lines) <br>
+    2.1 Argeuments in order are <br>
+     2.1.1 bundle name - required and must match spelling as used by Stardew (see the getRoomByBundle() method for valid bundle names) <br>
+     2.1.2 if bundle should be missing - "true" or "false" in lower case <br>
+     2.1.3 item name - if irrelevant use "None" (use exact spelling), for information which and how many items can be excluded see getRoomByBundle() and get_ObjectID_by_Itemname <br>
+     2.1.3.1 only items that can be missing in vanilla Stardew 1.6 are supported, if you need to check a different item you need to add their object id in get_ObjectID_by_Itemname <br>
+     2.1.4 i item  should be missing - "true" or "false" in lower case <br>
   3. set your search depth and starting seed in checkConditionsWrapper()
   4. build the project (CTRL+B)
-  5. run StardewModdingAPI.exe and wait for the title screen
+  5. run StardewModdingAPI.exe and wait for the title screen <br>
     5.1 you can technically run it while the game is still loading, but Stardew will crash if it needs attention before the search is through
   6. press B on your keyboard to run the search, the output will be in the SMAPI console window
   7. write down your seed, remove the Mod from the Mod folder, create your world and enjoy your challenge run
