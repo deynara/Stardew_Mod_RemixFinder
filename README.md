@@ -1,6 +1,4 @@
 # Stardew_Mod_RemixFinder
-README is WIP 
-
 This is a mod skeleton of a Seedfinder for the game Stardew Valley to find the desired remix bundle configuration.
 Stardew_Mod_RemixFinder is designed to be created as it's own mod and runs in the game itself.
 
