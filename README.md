@@ -4,18 +4,18 @@ README is WIP
 This is a mod skeleton of a Seedfinder for the game Stardew Valley to find the desired remix bundle configuration.
 Stardew_Mod_RemixFinder is designed to be created as it's own mod and runs in the game itself.
 
-##Why seed finding as a mod?
+## Why seed finding as a mod?
 To get the bundles generated correctly. With RNG involved it's important that calls are made in the exact order and amount. 
 That's guaranteed if the the game's own logic and data handling is used.
 As a side effect this mod might be able to handle content mods if they only chang the raw data used for remixed bundles.
 
-##How to use?
+## How to use?
 If you don't know much about programming or creating a mod:
   It should be simple enough to understand what to do.
 if you do know a lot about programming or creating a mod:
   I'm sorry, I don't know much about programming nor creating a mod.
 
-###Step 0 - Requirements:
+### Step 0 - Requirements:
   1. install Stardew Valley
   2. install SMAPI. https://stardewvalleywiki.com/Modding:Player_Guide/Getting_Started#Install_SMAPI
     SMAPI is the thign that will load your mod into the game.
@@ -25,14 +25,14 @@ if you do know a lot about programming or creating a mod:
   4. Install the .NET 6 SDK. https://dotnet.microsoft.com/en-us/download/dotnet/6.0
     You need .NET 6 because it's the version used by Stardew. (yes it is end of life)
 
-###Step 1 - Create the project - Setup
+### Step 1 - Create the project - Setup
   1. open your IDE
   2. Create a solution with a C# Class Library project  (Don't select Class Library (.NET Framework)! That's a separate thing with a similar name.)
   3. Use "Stardew_Mod_RemixFinder" as the project name to avoid naming/reference problems
   4. Target .Net 6.0 (you may need to intall and change it later, see below)
   5. Reference the Pathoschild.Stardew.ModBuildConfig NuGet package (see Stardew Wiki how to add the package) https://stardewvalleywiki.com/Modding:IDE_reference#In_Visual_Studio_2019.2F2022
 
-###Step 2 - Create the project - copy the code
+### Step 2 - Create the project - copy the code
   1. delete Class1.cs
   2. add a C# class file called "ModEntry.cs" and a .json file called "manifest.json"
     2.1 open Project Explorer (View -> Project Explorer or press shortcut Ctrl+Alt+L)
@@ -45,7 +45,7 @@ if you do know a lot about programming or creating a mod:
      5.2 if not open windows search bar and type %appdata% to look into the Roaming folder
      5.3 if it's not there either I don't know
 
-###Step 3 - Setup and Run your search
+### Step 3 - Setup and Run your search
   1. open the ModEntry.cs file and locate the getConditions()-method (line 63 or use CTRL+F to search)
   2. modifiy the Conditions_List.Add(getListItem()); items in accordance to your condition
     2.1 Argeuments in order are
@@ -61,7 +61,7 @@ if you do know a lot about programming or creating a mod:
   6. press B on your keyboard to run the search, the output will be in the SMAPI console window
   7. write down your seed, remove the Mod from the Mod folder, create your world and enjoy your challenge run
   
-##Change .Net version of solution:
+## Change .Net version of solution:
   1. open Project Explorer (View -> Project Explorer or press shortcut Ctrl+Alt+L)
   2. right-click "Stardew_Mod_RemixFinder" -> Properties (at the bottom of the menu)
   3. search the header Target framework in tab generel (should bethe second thing in the one already selected) -> choose .Net 6.0 in the dropdown
