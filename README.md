@@ -9,10 +9,10 @@ As a side effect this mod might be able to handle content mods if they only chan
 
 ## How to use?
 ### If you don't know much about programming or creating a mod: <br>
-  : It should be simple enough to understand what to do. <br>
+  > It should be simple enough to understand what to do. <br>
 ### If you do know a lot about programming or creating a mod: <br>
-  : I'm sorry, I don't know much about programming nor creating a mod. <br>
-  : Maybe you can clone this repository to skip a few steps?
+  > I'm sorry, I don't know much about programming nor creating a mod. <br>
+  > Maybe you can clone this repository to skip a few steps?
 
 ### Step 0 - Requirements:
   1. install Stardew Valley
@@ -34,15 +34,15 @@ As a side effect this mod might be able to handle content mods if they only chan
 ### Step 2 - Create the project - copy the code
   1. delete Class1.cs
   2. add a C# class file called "ModEntry.cs" and a .json file called "manifest.json" <br>
-    2.1 open Project Explorer (View -> Project Explorer or press shortcut Ctrl+Alt+L) <br>
-    2.2 right-click "Stardew_Mod_RemixFinder" -> Add > new element (around the center of the menu) <br>
+    > 2.1 open Project Explorer (View -> Project Explorer or press shortcut Ctrl+Alt+L) <br>
+    > 2.2 right-click "Stardew_Mod_RemixFinder" -> Add > new element (around the center of the menu) <br>
   3. copy the code from the files of the same name in this repository into them
   4. try to build the project 
-    4.1 Shortcut Ctrl+B, or Menu Create -> create Stardew_Mod_Remixfinder <br>
+    > 4.1 Shortcut Ctrl+B, or Menu Create -> create Stardew_Mod_Remixfinder <br>
   5. if successful without raising an error and SMAPI was installed correctly you should now find the mod in your mod folder <br>
-     5.1 Folder location if you have it through steam: right-click Stardew Valley -> Browse Local Files <br>
-     5.2 if not open windows search bar and type %appdata% to look into the Roaming folder <br>
-     5.3 if it's not there either I don't know <br>
+     > 5.1 Folder location if you have it through steam: right-click Stardew Valley -> Browse Local Files <br>
+     > 5.2 if not open windows search bar and type %appdata% to look into the Roaming folder <br>
+     > 5.3 if it's not there either I don't know <br>
 
 ### Step 3 - Setup and Run your search
 Hint: Start small and with only a few restrictions (or in range of one of the known seeds I gave as a comment inside the code)
