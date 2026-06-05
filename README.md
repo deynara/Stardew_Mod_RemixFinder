@@ -3,22 +3,22 @@ This is a mod skeleton of a Seedfinder for the game Stardew Valley to find the d
 Stardew_Mod_RemixFinder is designed to be created as it's own mod and runs in the game itself.
 
 ## Why seed finding as a mod?
-To get the bundles generated correctly. With RNG involved it's important that calls are made in the exact order and amount.\
-That's guaranteed if the the game's own logic and data handling is used.\
-As a side effect this mod might be able to handle content mods if they only change the raw data used for remixed bundles.\
+To get the bundles generated correctly. With RNG involved it's important that calls are made in the exact order and amount.<br>
+That's guaranteed if the the game's own logic and data handling is used.<br>
+As a side effect this mod might be able to handle content mods if they only change the raw data used for remixed bundles.<br>
 
 ## How to use?
-#### If you don't know much about programming or creating a mod:
-  It should be simple enough to understand what to do.
-#### if you do know a lot about programming or creating a mod:
+If you don't know much about programming or creating a mod: <br>
+  It should be simple enough to understand what to do. <br>
+if you do know a lot about programming or creating a mod: <br>
   I'm sorry, I don't know much about programming nor creating a mod.
 
 ### Step 0 - Requirements:
   1. install Stardew Valley
-  2. install SMAPI. https://stardewvalleywiki.com/Modding:Player_Guide/Getting_Started#Install_SMAPI \
+  2. install SMAPI. https://stardewvalleywiki.com/Modding:Player_Guide/Getting_Started#Install_SMAPI <br>
     SMAPI is the thing that will load your mod into the game.
   3. Install an IDE (integrated development environment)
-    which you'll use to edit and compile your mod code
+    which you'll use to edit and compile your mod code <br>
     To create this I used Windows Virtual Stuido Community (it's free) https://visualstudio.microsoft.com/de/vs/community/
   4. Install the .NET 6 SDK. https://dotnet.microsoft.com/en-us/download/dotnet/6.0
     You need .NET 6 because it's the version used by Stardew. (yes it is end of life)
@@ -34,18 +34,18 @@ As a side effect this mod might be able to handle content mods if they only chan
   1. delete Class1.cs
   2. add a C# class file called "ModEntry.cs" and a .json file called "manifest.json"
     2.1 open Project Explorer (View -> Project Explorer or press shortcut Ctrl+Alt+L)
-     2.2 right-click "Stardew_Mod_RemixFinder" -> Add > new element (around the center of the menu)
+    2.2 right-click "Stardew_Mod_RemixFinder" -> Add > new element (around the center of the menu)
   3.copy the code from the files of the same name in this repository into them
   4. try to build the project 
     4.1 Shortcut Ctrl+B, or Menu Create -> create Stardew_Mod_Remixfinder
-  5. if successful without raising an Error and SMAPI was installed correctly you should now find the mod in your mod folder
+  5. if successful without raising an error and SMAPI was installed correctly you should now find the mod in your mod folder
      5.1 Folder location if you have it through steam: right-click Stardew Valley -> Browse Local Files
      5.2 if not open windows search bar and type %appdata% to look into the Roaming folder
      5.3 if it's not there either I don't know
 
 ### Step 3 - Setup and Run your search
   1. open the ModEntry.cs file and locate the getConditions()-method (line 63 or use CTRL+F to search)
-  2. modifiy the Conditions_List.Add(getListItem()); items in accordance to your condition
+  2. modifiy the Conditions_List.Add(getListItem()); in accordance to your conditions (don't forget the trailing ';' if you add lines)
     2.1 Argeuments in order are
      2.1.1 bundle name - required and must match spelling as used by Stardew (see the getRoomByBundle() method for valid bundle names)
      2.1.2 if bundle should be missing - "true" or "false" in lower case
