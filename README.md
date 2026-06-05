@@ -3,19 +3,19 @@ This is a mod skeleton of a Seedfinder for the game Stardew Valley to find the d
 Stardew_Mod_RemixFinder is designed to be created as it's own mod and runs in the game itself.
 
 ## Why seed finding as a mod?
-To get the bundles generated correctly. With RNG involved it's important that calls are made in the exact order and amount. 
-That's guaranteed if the the game's own logic and data handling is used.
-As a side effect this mod might be able to handle content mods if they only chang the raw data used for remixed bundles.
+To get the bundles generated correctly. With RNG involved it's important that calls are made in the exact order and amount.\
+That's guaranteed if the the game's own logic and data handling is used.\
+As a side effect this mod might be able to handle content mods if they only change the raw data used for remixed bundles.\
 
 ## How to use?
-If you don't know much about programming or creating a mod:
+#### If you don't know much about programming or creating a mod:
   It should be simple enough to understand what to do.
-if you do know a lot about programming or creating a mod:
+#### if you do know a lot about programming or creating a mod:
   I'm sorry, I don't know much about programming nor creating a mod.
 
 ### Step 0 - Requirements:
   1. install Stardew Valley
-  2. install SMAPI. https://stardewvalleywiki.com/Modding:Player_Guide/Getting_Started#Install_SMAPI
+  2. install SMAPI. https://stardewvalleywiki.com/Modding:Player_Guide/Getting_Started#Install_SMAPI \
     SMAPI is the thing that will load your mod into the game.
   3. Install an IDE (integrated development environment)
     which you'll use to edit and compile your mod code
